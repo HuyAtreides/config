@@ -20,7 +20,9 @@ confirm-close-surface = false
 # ─── Improved Focus Visibility ──────────────────────────────
 # Makes the active split fully opaque while dimming others
 background-opacity = 0.95
-unfocused-split-opacity = 0.65
+unfocused-split-opacity = 0.6
+# Use the Dracula Purple for the split divider
+split-divider-color = #bd93f9
 
 # Adds a colored border around the active split (Dracula Purple)
 window-colorspace = srgb
