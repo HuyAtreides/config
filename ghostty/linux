@@ -58,6 +58,17 @@ keybind = alt+up=goto_split:top
 keybind = alt+down=goto_split:bottom
 keybind = ctrl+shift+enter=toggle_split_zoom
 
+# ─── Resize Splits ───────────
+keybind = alt+shift+right=resize_split:right,20
+keybind = alt+shift+left=resize_split:left,20
+keybind = alt+shift+up=resize_split:up,20
+keybind = alt+shift+down=resize_split:down,20
+
+# ─── Equalize Splits (The "Panic" Button) ──────────────────
+# Resets all splits to equal size (useful on both platforms)
+keybind = ctrl+shift+e=equalize_splits
+keybind = super+ctrl+e=equalize_splits
+
 # Tab management (Ctrl+Shift is the standard Linux terminal shortcut)
 keybind = ctrl+shift+t=new_tab
 keybind = ctrl+shift+w=close_surface

@@ -58,6 +58,17 @@ keybind = super+alt+up=goto_split:top
 keybind = super+alt+down=goto_split:bottom
 keybind = super+shift+enter=toggle_split_zoom
 
+# ─── Resize Splits: macOS (Cmd + Ctrl + Arrows) ────────────
+# Cmd+Ctrl is a common "power user" modifier on Mac
+keybind = super+ctrl+right=resize_split:right,20
+keybind = super+ctrl+left=resize_split:left,20
+keybind = super+ctrl+up=resize_split:up,20
+keybind = super+ctrl+down=resize_split:down,20
+# ─── Equalize Splits (The "Panic" Button) ──────────────────
+# Resets all splits to equal size (useful on both platforms)
+keybind = ctrl+shift+e=equalize_splits
+keybind = super+ctrl+e=equalize_splits
+
 # Tab management
 keybind = super+t=new_tab
 keybind = super+w=close_surface
