@@ -3,14 +3,6 @@
 //
 // These entries prevent VSCode from intercepting keys that Neovim needs.
 [
-  // Let space pass through to Neovim as leader key in normal/visual mode
-  {
-    "key": "space",
-    "command": "vscode-neovim.send",
-    "args": "<space>",
-    "when": "editorTextFocus && neovim.mode != insert"
-  },
-
   // Window navigation: Ctrl+J/K pass to Neovim
   {
     "key": "ctrl+j",
