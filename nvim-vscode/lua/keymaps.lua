@@ -49,9 +49,10 @@ keymap("n", "]b", call("workbench.action.nextEditor"), { desc = "Next Buffer" })
 --------------------------------------------------------------------------------
 -- Window
 --------------------------------------------------------------------------------
--- Ctrl+H/L handled in VSCode keybindings.json (explorer <-> editor navigation)
+keymap("n", "<C-h>", call("workbench.action.focusSideBar"), { desc = "Focus Explorer" })
 keymap("n", "<C-j>", call("workbench.action.focusBelowGroup"), { desc = "Focus Below Window" })
 keymap("n", "<C-k>", call("workbench.action.focusAboveGroup"), { desc = "Focus Above Window" })
+keymap("n", "<C-l>", call("workbench.action.focusRightGroup"), { desc = "Focus Right Window" })
 keymap("n", "<leader>w-", call("workbench.action.splitEditorDown"), { desc = "Split Below" })
 keymap("n", "<leader>-", call("workbench.action.splitEditorDown"), { desc = "Split Below" })
 keymap("n", "<leader>w|", call("workbench.action.splitEditor"), { desc = "Split Right" })

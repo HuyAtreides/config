@@ -25,18 +25,18 @@
     "when": "editorTextFocus && neovim.mode != insert"
   },
 
-  // Ctrl+H: from editor -> focus sidebar (like moving left to Snacks explorer)
+  // Ctrl+H/L: pass to Neovim (Neovim handles via VSCodeNotify)
   {
     "key": "ctrl+h",
-    "command": "workbench.action.focusSideBar",
-    "when": "editorTextFocus"
+    "command": "vscode-neovim.send",
+    "args": "<C-h>",
+    "when": "editorTextFocus && neovim.mode != insert"
   },
-
-  // Ctrl+L: from editor -> focus right editor group (normal split nav)
   {
     "key": "ctrl+l",
-    "command": "workbench.action.focusRightGroup",
-    "when": "editorTextFocus"
+    "command": "vscode-neovim.send",
+    "args": "<C-l>",
+    "when": "editorTextFocus && neovim.mode != insert"
   },
 
   // Ctrl+L: from sidebar/explorer -> focus back to editor
@@ -44,10 +44,7 @@
     "key": "ctrl+l",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "sideBarFocus"
-  },
-
-  // Ctrl+H: from explorer list -> collapse folder (like h in Snacks explorer)
-  // (Note: h/l already work natively in VSCode explorer for collapse/expand)
+  }
 
   // Terminal toggle: Ctrl+/ pass to Neovim
   {
