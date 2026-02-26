@@ -13,7 +13,8 @@ set relativenumber
 set ignorecase
 set smartcase
 set clipboard=unnamedplus
-set timeoutlen=300
+" set timeoutlen=300
+set notimeout
 set scrolloff=8
 set incsearch
 set hlsearch
@@ -29,7 +30,7 @@ set nerdtree
 set which-key
 
 " Which-key timeout
-let g:WhichKey_DefaultDelay = 300
+let g:WhichKey_DefaultDelay = 0
 
 " NERDTree settings (controls Project view with vim-like navigation)
 let g:NERDTreeMapActivateNode = "l"
