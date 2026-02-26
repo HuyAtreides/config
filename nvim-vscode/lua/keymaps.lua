@@ -1,10 +1,10 @@
 local keymap = vim.keymap.set
-local vscode = vim.fn.VSCodeNotify
+local vscode = require("vscode")
 
 -- Helper: call a VSCode command
 local function call(cmd)
   return function()
-    vscode(cmd)
+    vscode.action(cmd)
   end
 end
 
