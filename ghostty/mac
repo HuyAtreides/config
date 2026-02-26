@@ -16,6 +16,10 @@ window-decoration = auto
 window-theme = ghostty
 window-save-state = always
 confirm-close-surface = false
+# Move tab one position forward
+keybind = cmd+shift+right_bracket=move_tab:+1
+# Move tab one position backward
+keybind = cmd+shift+left_bracket=move_tab:-1
 
 # ─── Improved Focus Visibility ──────────────────────────────
 # Makes the active split fully opaque while dimming others
