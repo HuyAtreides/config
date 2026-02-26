@@ -1,0 +1,59 @@
+// Merge these into your VSCode keybindings.json
+// (Cmd+Shift+P -> "Preferences: Open Keyboard Shortcuts (JSON)")
+//
+// These entries prevent VSCode from intercepting keys that Neovim needs.
+[
+  // Let space pass through to Neovim as leader key in normal/visual mode
+  {
+    "key": "space",
+    "command": "vscode-neovim.send",
+    "args": "<space>",
+    "when": "editorTextFocus && neovim.mode != insert"
+  },
+
+  // Window navigation: Ctrl+J/K pass to Neovim
+  {
+    "key": "ctrl+j",
+    "command": "vscode-neovim.send",
+    "args": "<C-j>",
+    "when": "editorTextFocus && neovim.mode != insert"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "vscode-neovim.send",
+    "args": "<C-k>",
+    "when": "editorTextFocus && neovim.mode != insert"
+  },
+
+  // Ctrl+H: from editor -> focus sidebar (like moving left to Snacks explorer)
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusSideBar",
+    "when": "editorTextFocus"
+  },
+
+  // Ctrl+L: from editor -> focus right editor group (normal split nav)
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup",
+    "when": "editorTextFocus"
+  },
+
+  // Ctrl+L: from sidebar/explorer -> focus back to editor
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "sideBarFocus"
+  },
+
+  // Ctrl+H: from explorer list -> collapse folder (like h in Snacks explorer)
+  // (Note: h/l already work natively in VSCode explorer for collapse/expand)
+
+  // Terminal toggle: Ctrl+/ pass to Neovim
+  {
+    "key": "ctrl+/",
+    "command": "vscode-neovim.send",
+    "args": "<C-/>",
+    "when": "editorTextFocus && neovim.mode != insert"
+  }
+]

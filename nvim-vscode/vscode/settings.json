@@ -1,0 +1,14 @@
+// Merge these into your VSCode settings.json
+// (Cmd+Shift+P -> "Preferences: Open User Settings (JSON)")
+{
+  // Path to Neovim (adjust if yours is elsewhere)
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+
+  // Use the nvim-vscode config (requires symlink: ~/.config/nvim-vscode -> ~/config/nvim-vscode)
+  "vscode-neovim.NVIM_APPNAME": "nvim-vscode",
+
+  // Improve extension performance by giving it its own process
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  }
+}
