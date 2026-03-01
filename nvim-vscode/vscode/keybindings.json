@@ -1,8 +1,33 @@
-// Merge these into your VSCode keybindings.json
-// (Cmd+Shift+P -> "Preferences: Open Keyboard Shortcuts (JSON)")
-//
-// These entries prevent VSCode from intercepting keys that Neovim needs.
 [
+  {
+    "key": "ctrl+n",
+    "command": "explorer.newFile"
+  },
+  {
+    "key": "ctrl+shift+n",
+    "command": "explorer.newFolder"
+  },
+  {
+    "key": "alt+i",
+    "command": "editor.action.sourceAction"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-rust-analyzer.joinLines",
+    "when": "editorTextFocus && editorLangId == 'rust'"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "-workbench.action.search.toggleQueryDetails",
+    "when": "inSearchEditor || searchViewletFocus"
+  },
+  {
+    "key": "space",
+    "command": "vscode-neovim.send",
+    "args": "<space>",
+    "when": "editorTextFocus && neovim.mode != insert"
+  },
+
   // Window navigation: Ctrl+J/K pass to Neovim
   {
     "key": "ctrl+j",

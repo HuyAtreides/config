@@ -1,6 +1,114 @@
-// Merge these into your VSCode settings.json
-// (Cmd+Shift+P -> "Preferences: Open User Settings (JSON)")
 {
+  "editor.tabSize": 2,
+  "editor.fontSize": 15,
+  "editor.fontFamily": "Fira Code",
+  "files.eol": "\n",
+  "editor.fontLigatures": true,
+  "editor.accessibilityPageSize": 15,
+  "C_Cpp.updateChannel": "Insiders",
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "workbench.colorTheme": "Dracula Theme",
+  "http.proxyAuthorization": null,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.tree.indent": 17,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "files.associations": {
+    "*.hbs": "html"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.compactFolders": false,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter.notebook.ipynb"
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "prettier.jsxSingleQuote": true,
+  "prettier.printWidth": 90,
+  "prettier.singleQuote": true,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.trailingComma": "all",
+  "prettier.tabWidth": 2,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.suggestSmartCommit": false,
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "python.formatting.blackArgs": ["--line-length", "120"],
+  "python.formatting.provider": "black",
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "redhat.telemetry.enabled": false,
+  "eslint.lintTask.enable": true,
+  "cSpell.userWords": [
+    "Atreides",
+    "bigdata",
+    "Downvote",
+    "downvoted",
+    "Downvotes",
+    "dtos",
+    "fullname",
+    "Gifs",
+    "huyphan",
+    "KEYSPACE",
+    "medis",
+    "meids",
+    "MILI",
+    "PHAN",
+    "Sider",
+    "stunprotocol",
+    "UNDOWNVOTE",
+    "Unfollow",
+    "Unrestrict",
+    "UNUPVOTE",
+    "Upvote",
+    "upvoted",
+    "Upvotes",
+    "Viet"
+  ],
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "prettier.useEditorConfig": false,
+  "prettier.configPath": "",
+  "prettier.bracketSpacing": false,
+  "terminal.integrated.fontSize": 15,
+  "scm.inputFontSize": 14,
+  "workbench.editor.empty.hint": "hidden",
+  "[nginx]": {
+    "editor.defaultFormatter": "teclado.vscode-nginx-format"
+  },
+  "files.readonlyInclude": {
+    "**/.cargo/registry/src/**/*.rs": true,
+    "**/.cargo/git/checkouts/**/*.rs": true,
+    "**/lib/rustlib/src/rust/library/**/*.rs": true
+  },
+  "python.defaultInterpreterPath": "/bin/python3",
+  "window.zoomLevel": 0.4,
   // Path to Neovim (adjust if yours is elsewhere)
   "vscode-neovim.neovimExecutablePaths.darwin": "nvim",
 
@@ -10,5 +118,8 @@
   // Improve extension performance by giving it its own process
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   }
 }
