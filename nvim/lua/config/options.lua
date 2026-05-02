@@ -4,3 +4,6 @@
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 vim.g.root_spec = { "cwd" }
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.writebackup = false
